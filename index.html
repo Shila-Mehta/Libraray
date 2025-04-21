@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+    <script src="script.js"  defer></script>
+</head>
+<body>
+
+
+    <h1>Library</h1>
+
+    <div class="top">
+        <div class="search-part">
+            <Label for="search:">Search</Label>
+        <input type="text" name="search" id="search" placeholder="search by author or title"  class="search">
+        </div>
+       <button class="newButton">New book</button>
+    
+    </div>
+    
+   <dialog id="myFormdailog"  class="myDialog" >
+    <form  id="myForm" >
+        <h3>Add the details for the new book</h3>
+        <fieldset>
+            <legend>Details</legend>
+            <label for="author">author:</label>
+            <input type="text" name="author" id="author"  class="author" placeholder="Enter the author name" data-author="input.value"  required>
+            <label for="title">title:</label>
+            <input type="text" name="title" id="title"  class-="title" placeholder="Enter the title of book" required>
+            <label for="pages">pages</label>
+            <input type="number" name="pages" id="pages"  class="pages" placeholder="Enter the number of pages"  required>
+            <button type="submit"  class="submitMyForm" >submit</button>
+        </fieldset>
+       </form>
+
+       <button  class="close">close</button>
+   </dialog>
+
+
+   
+  <dialog  id="miniFormdialog"  class="myDialog"></dialog>
+
+  
+
+
+    
+</body>
+</html>
